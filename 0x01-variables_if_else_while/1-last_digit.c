@@ -4,8 +4,9 @@
 
 /**
  * main - Entry point
- * Description: 'Print the last number and check if last number is: >5, ==0 or <6 but not 0.'
- * return: always 0
+ * Description: 'Print the last number
+ * and check if last number is: >5, ==0 or <6 but not 0.'
+ * Return: always 0
  */
 
 int main(void)
@@ -16,7 +17,6 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	lastNumber = n % 10;
-	
 	if (lastNumber > 5)
 	{
 		printf("Last digit of %d is %d and is greater than 5\n", n, lastNumber);
@@ -25,7 +25,7 @@ int main(void)
 	{
 		printf("Last digit of %d is %d and is 0\n", n, lastNumber);
 	}
-	else if (lastNumber < 6 && lastNumber != 0)
+	else
 	{
 		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, lastNumber);
 	}
